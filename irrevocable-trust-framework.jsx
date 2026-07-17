@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Irrevocable Trust, Decided Before It's Drafted</title>
-<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>html,body,#root{margin:0;padding:0}</style>
-</head>
-<body>
-<div id="root"></div>
-<script type="text/babel" data-presets="react">
-const { useState } = React;
+import { useState } from "react";
 
 // ---------------------------------------------------------------
 // Irrevocable Trust Decision Framework
@@ -375,7 +360,7 @@ const STEPS = [
   { key: "tax", eyebrow: "VI · Tax status", q: "Who pays the trust's income tax?", options: TAXSTATUS },
 ];
 
-function IrrevocableTrustFramework() {
+export default function IrrevocableTrustFramework() {
   const [stepIdx, setStepIdx] = useState(0);
   const [answers, setAnswers] = useState({});
   const [ledger, setLedger] = useState([]);
@@ -625,8 +610,3 @@ function IrrevocableTrustFramework() {
     </div>
   );
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<IrrevocableTrustFramework />);
-</script>
-</body>
-</html>
