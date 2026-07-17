@@ -124,7 +124,7 @@ const VEHICLES = {
       label: "Married; want household access while the shares stack",
       ledger: "Vehicle: SLANT — spousal access, kept non-grantor by adverse-party consent",
       detail:
-        "A SLAT drafted to stay non-grantor: the spouse is a beneficiary, but distributions to the spouse require an adverse party's consent. The household keeps a path to the money; the trust keeps its own §1202 cap.",
+        "A SLAT drafted to stay non-grantor — a SLANT: the spouse is a beneficiary, but distributions to the spouse require an adverse party's consent. The household keeps a path to the money; the trust keeps its own §1202 cap.",
     },
     {
       id: "notqsbs",
